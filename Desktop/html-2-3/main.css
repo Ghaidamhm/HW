@@ -1,0 +1,142 @@
+
+
+
+.hi-section{
+    font-family: "Dancing Script", cursive;  
+    text-align: center;  
+    color: #335c62;  
+    font-weight: 700; 
+}
+
+.add-task-box{
+    display: flex; 
+    align-items: center;
+    gap:16px;
+    border: #3d3a3a 1px solid;
+    border-radius: 7px;
+    padding: 12px;
+    width: 500px;
+   
+   
+}
+
+
+
+
+
+:root {
+    --our-black: #181820;
+    --our-white:#F5F5F5;
+    --our-grey: #272833;
+    --our-green:#335c62;
+    --our-text-grey: #b8b8bb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: var(--our-green);
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;  
+    padding: 16px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    padding: 10px;
+    color: var(--our-text-grey);
+    font-size: 13px;
+    cursor: pointer;
+    align-items: center
+}
+
+.add-task-box {
+    border: rgba(39, 40, 51, 0.6) 2px solid;
+    margin-left: 460px;
+    width: 490px;
+}
+
+
+.add-task-box:hover {
+    background-color: var(--our-green);
+}
+
+.pink-box {
+    background-color: #335c62;
+    width: 16px;
+    height: 16px;
+    border-radius: 6px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-checkbox {
+    border: var(--our-grey) 2px solid;
+    width: 16px;
+    height: 16px;
+    border-radius: 6px;
+    color: var(--our-grey);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-checkbox > .icon {
+    display: none;
+    visibility: hidden;
+    
+}
+
+
+.task-box.checked > .task-checkbox > .icon {
+    display: block;
+    visibility: visible;
+}
+
+
+.task-box.checked > .task-checkbox {
+    background-color: var(--our-green);
+}
+
+.task-box {
+    background-color: var(--our-green);
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 300ms ease-in;
+    width: 500px;
+    margin-left: 455px;
+}
+
+.task-box:hover {
+    transform: rotateY(-10deg);
+}
+
+
